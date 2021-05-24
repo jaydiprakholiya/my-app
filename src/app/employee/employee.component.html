@@ -1,0 +1,67 @@
+<!-- <h2>{{employee}}</h2> -->
+<!-- <div>
+    <span>id:-</span>
+    {{employee.id}}
+</div>
+<div>
+<span>name:-</span>
+{{employee.name | uppercase}}
+</div> 
+<div>
+    <label for="name">employee name: </label>
+    <input id="name" [(ngModel)]="employee.name" placeholder="name">
+  </div> -->
+
+ <!-- <ul class="employee">
+     <li *ngFor="let employee of employee" 
+     [class.selected]="employee === selectedemployee"
+     (click)="onselect(employee)">
+        <span class="badge">{{employee.id}}</span>{{employee.name}}
+     </li>
+ </ul> -->
+
+ <!-- <div *ngIf="selectedemployee">
+
+ <h2>{{selectedemployee.name | uppercase}} Details</h2>
+<div><span>id: </span>{{selectedemployee.id}}</div>
+<div>
+  <label for="employee-name">employee name: </label>
+  <input id="employee-name" [(ngModel)]="selectedemployee.name" placeholder="name">
+</div>
+
+</div> -->
+<!-- 
+<h2>My employees</h2>
+<ul class="employees">
+  <li *ngFor="let hero of employees"
+    [class.selected]="employee === selectedemployee"
+    (click)="onSelect(employee)">
+    <span class="badge">{{employee.id}}</span> {{employee.name}}
+  </li>
+</ul>
+
+<div *ngIf="selectedemployee">
+
+  <h2>{{selectedemployee.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedemployee.id}}</div>
+  <div>
+    <label for="employee-name">employee name: </label>
+    <input id="employee-name" [(ngModel)]="selectedemployee.name" placeholder="name">
+  </div>
+
+</div>
+
+ -->
+
+
+ <h2>My employee</h2>
+
+<ul class="employee">
+  <li *ngFor="let employee of employee"
+    [class.selected]="employee === selectedemployee"
+    (click)="onSelect(employee)">
+    <span class="badge">{{employee.id}}</span> {{employee.name}}
+  </li>
+</ul>
+
+<app-employee-detail [employee]="selectedemployee"></app-employee-detail>
