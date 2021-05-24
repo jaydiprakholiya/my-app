@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { employee } from '../employee';
-import{EMPLOYEE}from '../moke-employee';
+import { EMPLOYEE } from "../moke-employee";
+
 
 @Component({
   selector: 'app-employee',
@@ -8,8 +9,9 @@ import{EMPLOYEE}from '../moke-employee';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-  employee = EMPLOYEE;
+  employees = EMPLOYEE;
   selectedemployee?:employee;
+  
 
   // employee:employee= {
   //   id:1,
@@ -24,5 +26,7 @@ export class EmployeeComponent implements OnInit {
   }
 
  
-  onSelect(employee:employee):void{this.selectedemployee =employee;}
+  onSelect(employees:employee):void{this.selectedemployee =employees;}
 }
+
+
