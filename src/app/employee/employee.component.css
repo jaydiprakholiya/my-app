@@ -1,4 +1,3 @@
-/* HeroesComponent's private CSS styles */
 .employee {
     margin: 0 0 2em 0;
     list-style-type: none;
@@ -49,4 +48,9 @@
   
   input {
     padding: .5rem;
+  }
+
+  a{
+    text-decoration:none;
+    color: #2c3a41;
   }

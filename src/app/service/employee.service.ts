@@ -15,8 +15,6 @@ export class EmployeeService {
     return employees;
   } 
   getemployee(id: number): Observable<employee> {
-    // For now, assume that a hero with the specified `id` always exists.
-    // Error handling will be added in the next step of the tutorial.
     const employee = EMPLOYEE.find(h => h.id === id)!;
     this.messageService.add(`HeroService: fetched hero id=${id}`);
     return of(employee);
