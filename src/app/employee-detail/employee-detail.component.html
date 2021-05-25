@@ -1,6 +1,6 @@
 <div *ngIf="employee">
 
-    <h2>Employee Details</h2>
+    <h2>{{employee.name | uppercase}} Details</h2>
     <div><span>id: </span>{{employee.id}}</div>
     <div>
 
@@ -8,7 +8,7 @@
       <input id="employee-name" [(ngModel)]="employeee" placeholder="{{employee.name}}">
       <br>
       <label for="employee-MobilNo">MobileNo:</label>
-      <input id="employee-MobilNo" [(ngModel)]="employee.MobileNo">
+      <input id="employee-MobilNo" [(ngModel)]="employee.MobileNo" placeholder="{{employee.MobileNo}}">
       
 </div>
   

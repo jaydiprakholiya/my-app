@@ -7,12 +7,11 @@ import {employee} from '../employee';
   styleUrls: ['./employee-detail.component.css']
 })
 export class EmployeeDetailComponent implements OnInit {
+ @Input() employee?:employee;
  
-  @Input() employee?: employee;
-
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit(): void {
+   
   }
-
 }

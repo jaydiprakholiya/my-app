@@ -28,5 +28,3 @@ export class EmployeeComponent implements OnInit {
  
   onSelect(employees:employee):void{this.selectedemployee =employees;}
 }
-
-
