@@ -21,10 +21,10 @@ export class EmployeeComponent implements OnInit {
     this.getemployee();
 
   }
-  onSelect(employee:employee):void{
-    this.selectedemployee = employee;
-    this.messageService.add(` Selected employee id=${employee.id}`);
-  }
+  // onSelect(employee:employee):void{
+  //   this.selectedemployee = employee;
+  //   this.messageService.add(` Selected employee id=${employee.id}`);
+  // }
 
   getemployee() : void {
    this.employeeService.getemployees().subscribe(employees=>this.employees = employees);
