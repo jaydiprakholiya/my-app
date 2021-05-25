@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { employee } from '../employee';
-import { EMPLOYEE } from "../moke-employee";
+import { EmployeeService } from '../service/employee.service';
+import { MessageService } from '../service/message.service';
 
 
 @Component({
@@ -9,22 +10,23 @@ import { EMPLOYEE } from "../moke-employee";
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-  employees = EMPLOYEE;
+
   selectedemployee?:employee;
+
+  employees : employee[] = [];
   
+  constructor(private employeeService:EmployeeService,private messageService:MessageService) { }
 
-  // employee:employee= {
-  //   id:1,
-  //   name:'jaydip'
-  // };
-
-
-  constructor() { }
-
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getemployee();
 
   }
+  onSelect(employee:employee):void{
+    this.selectedemployee = employee;
+    this.messageService.add(` Selected employee id=${employee.id}`);
+  }
 
- 
-  onSelect(employees:employee):void{this.selectedemployee =employees;}
+  getemployee() : void {
+   this.employeeService.getemployees().subscribe(employees=>this.employees = employees);
+  }
 }

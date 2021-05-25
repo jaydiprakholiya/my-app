@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 
 
@@ -12,7 +13,8 @@ import { EmployeeDetailComponent } from './employee-detail/employee-detail.compo
   declarations: [
     AppComponent,
     EmployeeComponent,
-    EmployeeDetailComponent, 
+    EmployeeDetailComponent,
+    MessagesComponent, 
   ],
   imports: [
     BrowserModule,
