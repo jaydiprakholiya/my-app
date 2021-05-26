@@ -10,7 +10,7 @@ import { EmployeeService } from '../service/employee.service';
 export class DashboardComponent implements OnInit {
   employees:employee[]=[];
 
-  constructor(private employeeService:EmployeeService) { }
+  constructor(private employeeService: EmployeeService) { }
 
   ngOnInit(): void {
     this.getemployees();
