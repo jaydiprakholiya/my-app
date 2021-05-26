@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
-import {employee} from '../employee';
+import {employee} from '../data/employee';
 import { EmployeeService } from '../service/employee.service';
 
 

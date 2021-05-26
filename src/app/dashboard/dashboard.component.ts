@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { employee } from '../employee';
+import { employee } from '../data/employee';
 import { EmployeeService } from '../service/employee.service';
 @Component({
   selector: 'app-dashboard',
