@@ -20,7 +20,8 @@ export class EmployeeComponent implements OnInit {
   ngOnInit() {
     this.getemployee();
 
-  }
+  } 
+  
   // onSelect(employee:employee):void{
   //   this.selectedemployee = employee;
   //   this.messageService.add(` Selected employee id=${employee.id}`);
