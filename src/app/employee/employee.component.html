@@ -12,7 +12,7 @@
     <input id="name" [(ngModel)]="employee.name" placeholder="name">
   </div> -->
 
- <!-- <ul class="employee">
+<!-- <ul class="employee">
      <li *ngFor="let employee of employee" 
      [class.selected]="employee === selectedemployee"
      (click)="onselect(employee)">
@@ -20,7 +20,7 @@
      </li>
  </ul> -->
 
- <!-- <div *ngIf="selectedemployee">
+<!-- <div *ngIf="selectedemployee">
 
  <h2>{{selectedemployee.name | uppercase}} Details</h2>
 <div><span>id: </span>{{selectedemployee.id}}</div>
@@ -54,13 +54,13 @@
  -->
 
 
- <h2>Employee List</h2>
+<h2>Employee List</h2>
 
 <ul class="employee">
   <li *ngFor="let employee of employees">
     <a routerLink="/detail/{{employee.id}}">
-    <span class="badge">{{employee.id}}</span> {{employee.name}}
-  </a>
+      <span class="badge">{{employee.id}}</span> {{employee.name}}
+    </a>
   </li>
 </ul>
 
