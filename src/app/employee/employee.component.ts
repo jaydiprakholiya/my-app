@@ -27,7 +27,7 @@ export class EmployeeComponent implements OnInit {
   //   this.messageService.add(` Selected employee id=${employee.id}`);
   // }
 
-  getemployee() : void {
+   getemployee() : void {
    this.employeeService.getemployees().subscribe(employees=>this.employees = employees);
   }
 }

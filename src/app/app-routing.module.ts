@@ -10,8 +10,6 @@ const routes: Routes = [
   {path:'dashboard',component:DashboardComponent},
   { path: 'detail/:id', component: EmployeeDetailComponent },
   { path: 'employee', component: EmployeeComponent },
-  
-  
 ];
 
 @NgModule({
