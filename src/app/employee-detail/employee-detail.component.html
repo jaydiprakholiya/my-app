@@ -1,18 +1,18 @@
 <div *ngIf="employee">
 
-    <h2>{{employee.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{employee.id}}</div>
-    <div>
+  <h2>{{employee.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{employee.id}}</div>
+  <div>
 
-      <label for="employee-name">Name: </label>
-      <input id="employee-name" [(ngModel)]="employeee" placeholder="{{employee.name}}">
-      <br>
-      <label for="employee-MobilNo">MobileNo:</label>
-      <input id="employee-MobilNo" [(ngModel)]="employee.MobileNo" placeholder="{{employee.MobileNo}}">
-      
-</div>
-<button (click)="goBack()">
-  <img src="src\assets\Image\c-logo.jpg" height="16" width="16" alt="Back"/>
-</button>
+    <label for="employee-name">Name: </label>
+    <input id="employee-name" [(ngModel)]="employeee" placeholder="{{employee.name}}">
+    <br>
+    <label for="employee-MobilNo">MobileNo:</label>
+    <input id="employee-MobilNo" [(ngModel)]="employee.MobileNo" placeholder="{{employee.MobileNo}}">
+
+  </div>
+  <button (click)="goBack()">
+    <img src="src\assets\Image\c-logo.jpg" height="16" width="16" alt="Back" />
+  </button>
 
 </div>
